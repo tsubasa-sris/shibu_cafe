@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300');
+
+html{
+  font-size: 62.5%;
+  background-color: white;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+header{
+  background-image: url(../images_access/header_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+  transition-property: all;
+  transition-duration: .8s;
+  .logo_nav{
+    .left{
+      float:left;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 28%;
+      height: auto;
+      display: block;
+    }
+    #open{
+      float: right;
+      position: fixed;
+      top: 10px;
+      left: 83%;
+      width: 15%;
+    }
+  }
+  h1{
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    bottom: -18px;
+    font-weight: 300;
+    right: 0;
+    left: 0;
+    font-size: 7rem;
+    text-align: center;
+    letter-spacing: 4px;
+    color: white;
+    margin: auto;
+    img{
+      display: block;
+      margin: auto;
+    }
+  }
+}
+// haeder
+main{
+  padding: 10px;
+  transition-property: all;
+  transition-duration: .8s;
+  padding: 18px;
+  background-color: #fafafa;
+  #access{
+    ul{
+      width: 70%;
+      margin:15px auto;
+      li{
+        color: #2b2b2b;
+        font-size: 1.5rem;
+        padding-bottom: 18px;
+        letter-spacing: 1.2px;
+        .fa{
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+// main
+
+.next_btn{
+  padding: 18px 10px 10px 10px;
+  text-align: right;
+  a{
+    text-decoration: none;
+    color: black;
+    span{
+      font-size: 1.4rem;
+      line-height: 3rem;
+      display: inline-block;
+    }
+    img{
+      width: 3.6rem;
+    }
+  }
+}
+
+footer{
+  background-image: url(../images/footer_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  transition-property: all;
+  transition-duration: .8s;
+  .container{
+    padding: 28px 10px;
+    overflow: hidden;
+    .left_box{
+      width: 45%;
+      float: left;
+      @media (max-width: 320px){
+        width: 56%;
+        img{
+          width: 60%;
+        }
+        small{
+          font-size: 1.8rem;
+        }
+      }
+      img{
+        width: 58%;
+      }
+      small{
+        display: block;
+        color: white;
+        font-size: 1rem;
+        margin-top: 2px;
+      }
+    }
+    .right_box{
+      float: right;
+      margin-right: 0px;
+      text-align: right;
+      ul{
+        overflow: hidden;
+        margin-top: 16px;
+        li{
+          float: left;
+          margin-right: 16px;
+          @media (max-width: 320px){
+            margin-right: 12px;
+          }
+          a{
+            color: white;
+            text-decoration: none;
+            font-size: 1.8rem;
+            display: inline-block;
+            border: 1px solid white;
+            text-align: center;
+            padding: .4em .7em;
+            border-radius: 80px;
+            @media (max-width: 320px){
+              font-size: 1.4rem;
+            }
+            .fa-facebook{
+              width: 1.6rem;
+            }
+          }
+        }
+        li:last-child{
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+}
+// footer
+
+#drawer{
+  position: fixed;
+  top: 0;
+  right: -310px;
+  width: 75%;
+  height: 100vh;
+  z-index: 300;
+  background-image: url(../images/nav_bg.jpg);
+  transition-property: all;
+  transition-duration: .8s;
+  @media (min-width: 768px){
+    right: -580px;
+  }
+  .logo{
+    width: 38%;
+    margin: 12px;
+  }
+  #close_btn{
+    width: 20%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  ul{
+    margin-left: 30px;
+    margin-top: 30px;
+    li{
+      margin-bottom: 32px;
+      a{
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+        color: white;
+        font-size: 2rem;
+        letter-spacing: 4px;
+        font-weight: 200;
+        .fa{
+          font-size: 2rem;
+          margin-right: 10px;
+        }
+      }
+    }
+    @media (min-width: 768px){
+      li{
+        margin-top: 50px;
+        margin-left: 34px;
+        a{
+          font-size: 4.5rem;
+          .fa{
+            font-size: 3.4rem;
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+#drawer.show_menu{
+  display: block;
+  top: 0;
+  right: 0;
+}
+header.show_menu, main.show_menu, footer.show_menu{
+  opacity: 0.2;
+}
