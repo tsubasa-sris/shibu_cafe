@@ -1,35 +1,43 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:200,400");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300");
 html { font-size: 62.5%; background-color: white; }
 
 img { width: 100%; height: auto; }
 
-header { background-image: url(../images/header_bg.jpg); background-size: cover; background-position: center; height: 50vh; position: relative; overflow: hidden; transition-property: all; transition-duration: .8s; }
+header { background-image: url(../images_menu/header_bg.jpg); background-size: cover; background-position: center; height: 50vh; position: relative; overflow: hidden; transition-property: all; transition-duration: .8s; }
 
 header .logo_nav .left { float: left; position: absolute; top: 10px; left: 10px; width: 28%; height: auto; display: block; }
 
 header .logo_nav #open { float: right; position: fixed; top: 10px; left: 83%; width: 15%; }
 
-header h1 { position: absolute; bottom: -1px; right: 0; left: 0; width: 92%; margin: auto; }
+header h1 { font-family: 'Montserrat', sans-serif; position: absolute; bottom: -18px; font-weight: 300; right: 0; left: 0; font-size: 7rem; text-align: center; letter-spacing: 4px; color: white; margin: auto; }
 
 header h1 img { display: block; margin: auto; }
 
-main { background-color: #fafafa; padding: 10px; transition-property: all; transition-duration: .8s; }
+main { padding: 10px; transition-property: all; transition-duration: .8s; padding: 18px; background-color: #fafafa; }
 
-main #about h2 { font-size: 1.8rem; padding: 4px 0 10px 0; }
+main #menu .menu_list { color: #2b2b2b; padding: 6px; }
 
-main #about p { font-size: 1.2rem; line-height: 1.7; }
+main #menu .menu_list h2 { font-size: 1.6rem; padding: 4px 0 10px 0; font-family: 'Montserrat', sans-serif; font-weight: 200; }
 
-main #about .about_photo { margin-top: 14px; }
+main #menu .menu_list h2 img { width: 1.8rem; }
 
-main #about .about_photo ul { text-align: center; }
+main #menu .menu_list h2 .orange { width: 1.6rem; }
 
-main #about .about_photo ul li { display: inline-block; width: 48%; margin-right: 3%; }
+main #menu .menu_list ul { margin-left: 24px; }
 
-@media (max-width: 320px) { main #about .about_photo ul li { width: 47%; } }
+main #menu .menu_list ul li { font-size: 1.3rem; margin-bottom: 18px; }
 
-main #about .about_photo ul li img { display: block; }
+main #menu .menu_photo ul { text-align: center; }
 
-main #about .about_photo ul li:last-child { margin-right: 0; }
+main #menu .menu_photo ul li { width: 47%; display: inline-block; margin-right: 14px; margin-bottom: 20px; }
+
+main #menu .menu_photo ul li p { margin-top: 5px; }
+
+main #menu .menu_photo ul li:nth-child(2) { margin-right: 0; }
+
+main #menu .menu_photo ul li:nth-child(3) { margin-bottom: 0; }
+
+main #menu .menu_photo ul li:last-child { margin-right: 0; margin-bottom: 0; }
 
 .next_btn { padding: 18px 10px 10px 10px; text-align: right; }
 
@@ -81,7 +89,7 @@ footer .container .right_box ul li:last-child { margin-right: 0px; }
 
 #drawer ul li { margin-bottom: 32px; }
 
-#drawer ul li a { font-family: 'Montserrat', sans-serif; font-weight: 200; text-decoration: none; color: white; font-size: 2rem; letter-spacing: 4px; }
+#drawer ul li a { font-family: 'Montserrat', sans-serif; text-decoration: none; color: white; font-size: 2rem; letter-spacing: 4px; font-weight: 200; }
 
 #drawer ul li a .fa { font-size: 2rem; margin-right: 10px; }
 

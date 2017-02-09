@@ -9,12 +9,29 @@
         <link rel="stylesheet" href="./css/style.compact.css">
     </head>
     <body>
+        <nav id="drawer">
+            <div class="logo">
+                <a href="index.html"><img src="./images/shibucafe_logo1.svg" alt=""></a>
+            </div>
+            <div id="close_btn">
+                <img src="./images/close_btn.svg" alt="">
+            </div>
+            <ul>
+                <li><a href="index.html">TOP</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="access.html">ACCESS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>facebook</a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
+            </ul>
+        </nav>
         <header>
             <div class="logo_nav">
                 <div class="left">
-                    <a href="#"><img src="./images/shibucafe_logo1.svg" alt=""></a>
+                    <a href="index.html"><img src="./images/shibucafe_logo1.svg" alt=""></a>
                 </div>
-                <div class="right">
+                <div id="open">
                     <img src="./images/menu_btn.svg" alt="">
                 </div>
             </div>
@@ -35,11 +52,11 @@
                         <li><img src="./images/barista.jpg" alt=""></li>
                     </ul>
                 </div>
-                <div class="next_btn">
-                    <a href="menu.html"><img src="./images/arrow.svg" alt=""><span>　メニューを見る</span></a>
-                </div>
             </section>
             <!-- about -->
+            <div class="next_btn">
+                <a href="menu.html"><img src="./images/arrow.svg" alt=""><span>　メニューを見る</span></a>
+            </div>
         </main>
         <footer>
             <div class="container">
@@ -50,11 +67,20 @@
                 <div class="right_box">
                     <ul>
                         <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                         <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
             </div>
         </footer>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+        <script>
+            $('#open').click(function(){
+                $('#drawer, header, main, footer').toggleClass('show_menu');
+            });
+            $('#close_btn').click(function(){
+                $('#drawer, header, main, footer').toggleClass('show_menu');
+            });
+        </script>
     </body>
 </html>
