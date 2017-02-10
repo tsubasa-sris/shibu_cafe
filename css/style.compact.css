@@ -45,9 +45,9 @@ footer .container { padding: 28px 10px; overflow: hidden; }
 
 footer .container .left_box { width: 45%; float: left; }
 
-@media (max-width: 320px) { footer .container .left_box { width: 56%; }
+@media (max-width: 360px) { footer .container .left_box { width: 56%; }
   footer .container .left_box img { width: 60%; }
-  footer .container .left_box small { font-size: 1.8rem; } }
+  footer .container .left_box small { margin-top: 3px; font-size: 1.8rem; } }
 
 footer .container .left_box img { width: 58%; }
 
@@ -59,19 +59,17 @@ footer .container .right_box ul { overflow: hidden; margin-top: 16px; }
 
 footer .container .right_box ul li { float: left; margin-right: 16px; }
 
-@media (max-width: 320px) { footer .container .right_box ul li { margin-right: 12px; } }
+@media (max-width: 360px) { footer .container .right_box ul li { margin-right: 12px; } }
 
 footer .container .right_box ul li a { color: white; text-decoration: none; font-size: 1.8rem; display: inline-block; border: 1px solid white; text-align: center; padding: .4em .7em; border-radius: 80px; }
 
-@media (max-width: 320px) { footer .container .right_box ul li a { font-size: 1.4rem; } }
+@media (max-width: 360px) { footer .container .right_box ul li a { font-size: 1.4rem; } }
 
 footer .container .right_box ul li a .fa-facebook { width: 1.6rem; }
 
 footer .container .right_box ul li:last-child { margin-right: 0px; }
 
 #drawer { position: fixed; top: 0; right: -310px; width: 75%; height: 100vh; z-index: 300; background-image: url(../images/nav_bg.jpg); transition-property: all; transition-duration: .8s; }
-
-@media (min-width: 768px) { #drawer { right: -580px; } }
 
 #drawer .logo { width: 38%; margin: 12px; }
 
@@ -84,10 +82,6 @@ footer .container .right_box ul li:last-child { margin-right: 0px; }
 #drawer ul li a { font-family: 'Montserrat', sans-serif; font-weight: 200; text-decoration: none; color: white; font-size: 2rem; letter-spacing: 4px; }
 
 #drawer ul li a .fa { font-size: 2rem; margin-right: 10px; }
-
-@media (min-width: 768px) { #drawer ul li { margin-top: 50px; margin-left: 34px; }
-  #drawer ul li a { font-size: 4.5rem; }
-  #drawer ul li a .fa { font-size: 3.4rem; margin-right: 20px; } }
 
 #drawer.show_menu { display: block; top: 0; right: 0; }
 

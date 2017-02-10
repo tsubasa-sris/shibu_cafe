@@ -119,12 +119,13 @@ footer{
     .left_box{
       width: 45%;
       float: left;
-      @media (max-width: 320px){
+      @media (max-width: 360px){
         width: 56%;
         img{
           width: 60%;
         }
         small{
+          margin-top: 3px;
           font-size: 1.8rem;
         }
       }
@@ -148,7 +149,7 @@ footer{
         li{
           float: left;
           margin-right: 16px;
-          @media (max-width: 320px){
+          @media (max-width: 360px){
             margin-right: 12px;
           }
           a{
@@ -160,7 +161,7 @@ footer{
             text-align: center;
             padding: .4em .7em;
             border-radius: 80px;
-            @media (max-width: 320px){
+            @media (max-width: 360px){
               font-size: 1.4rem;
             }
             .fa-facebook{
@@ -187,9 +188,6 @@ footer{
   background-image: url(../images/nav_bg.jpg);
   transition-property: all;
   transition-duration: .8s;
-  @media (min-width: 768px){
-    right: -580px;
-  }
   .logo{
     width: 38%;
     margin: 12px;
@@ -215,19 +213,6 @@ footer{
         .fa{
           font-size: 2rem;
           margin-right: 10px;
-        }
-      }
-    }
-    @media (min-width: 768px){
-      li{
-        margin-top: 50px;
-        margin-left: 34px;
-        a{
-          font-size: 4.5rem;
-          .fa{
-            font-size: 3.4rem;
-            margin-right: 20px;
-          }
         }
       }
     }
