@@ -85,12 +85,14 @@ main{
     text-decoration: none;
     color: black;
     span{
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       line-height: 3rem;
       display: inline-block;
     }
     img{
-      width: 3.6rem;
+      width: 3.2rem;
+      vertical-align: -40%;
+      margin-right: 8px;
     }
   }
 }

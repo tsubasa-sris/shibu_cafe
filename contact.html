@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <script src="https://use.fontawesome.com/62440912c4.js"></script>
+        <meta charset="utf-8">
+        <title>SHIBU CAFE / CONTACT</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+        <link rel="stylesheet" href="./css/contact.compact.css">
+    </head>
+    <body>
+        <nav id="drawer">
+            <div class="logo">
+                <a href="index.html"><img src="./images/shibucafe_logo1.svg" alt=""></a>
+            </div>
+            <div id="close_btn">
+                <img src="./images/close_btn.svg" alt="">
+            </div>
+            <ul>
+                <li><a href="index.html">TOP</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="access.html">ACCESS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>facebook</a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
+            </ul>
+        </nav>
+        <header>
+            <div class="logo_nav">
+                <div class="left">
+                    <a href="index.html"><img src="./images/shibucafe_logo1.svg" alt=""></a>
+                </div>
+                <div id="open">
+                    <img src="./images/menu_btn.svg" alt="">
+                </div>
+            </div>
+            <h1>CONTACT</h1>
+        </header>
+        <main>
+            <section id="contact">
+                <p>ご質問等がありましたら、<br>
+                    下記のお問い合わせフォームよりお問い合わせください。
+                </p>
+                <form action="xxx.php">
+                    <table>
+                        <tr>
+                            <th>お名前</th>
+                            <td><input type="text" name="name" maxlength="20"><span></span></td>
+                        </tr>
+                        <tr>
+                            <th>ご連絡先</th>
+                            <td><input type="text" name="address" maxlength="20" class="address"><span></span></td>
+                        </tr>
+                        <tr>
+                            <th>お問い合わせ内容</th>
+                            <td><textarea name="inquary" rows="8" cols="20"></textarea><span></span></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td><input type="submit" name="" value="送　信"></td>
+                        </tr>
+                    </table>
+
+                </form>
+            </section>
+            <!-- about -->
+            <div class="next_btn">
+                <a href="index.html"><img src="./images/arrow.svg" alt=""><span>トップに戻る</span></a>
+            </div>
+
+        </main>
+        <footer>
+            <div class="container">
+                <div class="left_box">
+                    <a href="#"><img src="./images/shibucafe_logo1.svg" alt="ロゴ"></a>
+                    <small>&copy; SHIBU CAFE all right reserved</small>
+                </div>
+                <div class="right_box">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+        <script>
+            $('#open').click(function(){
+                $('#drawer, header, main, footer').toggleClass('show_menu');
+            });
+            $('#close_btn').click(function(){
+                $('#drawer, header, main, footer').toggleClass('show_menu');
+            });
+            // フォーム入力
+            $('form').submit(function(){
+                var checkform = true;
+                if($('input[type="text"]').val() == ''){
+                    $('input[type="text"] + span').text('※必須項目です');
+                    checkform = false;
+                }else{
+                    $('input[type="text"] + span').text('');
+                }
+                if($('.address').val() == ''){
+                    $('.address + span').text('※必須項目です');
+                    checkform = false;
+                }else{
+                    $('.address + span').text('');
+                }
+                if($('textarea').val() == ''){
+                    $('textarea + span').text('※必須項目です');
+                    checkform = false;
+                }else{
+                    $('textarea + span').text('');
+                }
+                return checkform;
+            });
+        </script>
+    </body>
+</html>

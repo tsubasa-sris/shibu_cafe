@@ -25,9 +25,9 @@ main #access ul li .fa { margin-right: 10px; }
 
 .next_btn a { text-decoration: none; color: black; }
 
-.next_btn a span { font-size: 1.4rem; line-height: 3rem; display: inline-block; }
+.next_btn a span { font-size: 1.3rem; line-height: 3rem; display: inline-block; }
 
-.next_btn a img { width: 3.6rem; }
+.next_btn a img { width: 3.2rem; vertical-align: -40%; margin-right: 8px; }
 
 footer { background-image: url(../images/footer_bg.jpg); background-size: cover; background-position: center; transition-property: all; transition-duration: .8s; }
 
