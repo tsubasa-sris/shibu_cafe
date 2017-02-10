@@ -1,3 +1,5 @@
+header { background-image: url(../images_access/header_bg.jpg); }
+
 header h1 { font-family: 'Montserrat', sans-serif; position: absolute; bottom: -18px; font-weight: 300; right: 0; left: 0; font-size: 7rem; text-align: center; letter-spacing: 4px; color: white; margin: auto; }
 
 main { padding: 10px; transition-property: all; transition-duration: .8s; padding: 18px; background-color: #fafafa; }
