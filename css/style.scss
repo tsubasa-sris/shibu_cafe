@@ -26,6 +26,7 @@ header{
       width: 28%;
       height: auto;
       display: block;
+      margin: 3px;
     }
     #open{
       float: right;
@@ -85,6 +86,18 @@ main{
       }
     }
   }
+  @media (min-width: 768px){
+    padding: 20px;
+    #about{
+      h2{
+        font-size: 2.4rem;
+      }
+      p{
+        font-size: 2rem;
+        margin-bottom: 30px;
+      }
+    }
+  }
 }
 // main
 
@@ -103,6 +116,18 @@ main{
       width: 3.2rem;
       vertical-align: -40%;
       margin-right: 8px;
+    }
+  }
+  @media (min-width: 768px){
+    padding: 28px 10px 15px 14px;
+    a{
+      span{
+        font-size: 2.2rem;
+      }
+      img{
+        width: 3.8rem;
+        vertical-align: -34%;
+      }
     }
   }
 }
@@ -174,6 +199,32 @@ footer{
         }
       }
     }
+    @media (min-width: 768px){
+      .left_box{
+        img{
+          width: 40%;
+        }
+        small{
+          font-size: 2rem;
+          margin-top: 4px;
+        }
+      }
+      .right_box{
+        ul{
+          margin-top: 20px;
+          margin-right: 10px;
+          li{
+            margin-right: 26px;
+            a{
+              font-size: 3.4rem;
+              .fa-facebook{
+                width: 4rem;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 // footer
@@ -217,6 +268,25 @@ footer{
       }
     }
   }
+  @media (min-width: 768px){
+    right: -770px;
+    .logo{
+      margin: 20px;
+    }
+    ul{
+      margin: 70px 0 0 50px;
+      li{
+        margin-bottom: 50px;
+        a{
+          font-size: 3.8rem;
+          .fa{
+            font-size: 4rem;
+          }
+        }
+      }
+    }
+  }
+  // タブレット用
 }
 #drawer.show_menu{
   display: block;

@@ -15,6 +15,10 @@ header{
     @media (max-width: 320px){
       font-size: 5.8rem;
     }
+    @media (min-width: 768px){
+      font-size: 12rem;
+      bottom: -32px;
+    }
   }
 }
 // haeder
@@ -70,6 +74,38 @@ main{
           }
         }
       }
+    }
+    @media (min-width: 768px){
+      padding: 20px;
+        p{
+          font-size: 2.2rem;
+        }
+        form{
+          margin-top: 32px;
+          table{
+            th{
+              width: 33%;
+              font-size: 2rem;
+              padding-right: 20px;
+            }
+            td{
+              padding-bottom: 2rem;
+              span{
+                font-size: 1.6rem;
+              }
+              input[type="text"]{
+                height: 3rem;
+              }
+              textarea{
+                height: 20rem;
+              }
+              input[type="submit"]{
+                height: 4rem;
+                font-size: 1.6rem;
+              }
+            }
+          }
+        }
     }
   }
 }

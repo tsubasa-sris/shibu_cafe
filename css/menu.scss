@@ -12,6 +12,10 @@ header{
     letter-spacing: 4px;
     color: white;
     margin: auto;
+    @media (min-width: 768px){
+      font-size: 12rem;
+      bottom: -32px;
+    }
   }
 }
 // haeder
@@ -53,6 +57,26 @@ main{
           }
         }
       }
+      @media (min-width: 768px){
+        padding: 26px;
+        h2{
+          font-size: 3rem;
+          img{
+            width: 3.6rem;
+          }
+          .banana{
+            width: 3rem;
+          }
+        }
+        ul{
+          margin-top: 10px;
+          margin-left: 34px;
+          li{
+            font-size: 2.3rem;
+            margin-bottom: 28px;
+          }
+        }
+      }
     }
     .menu_photo{
       ul{
@@ -76,6 +100,17 @@ main{
         li:last-child{
           margin-right: 0;
           margin-bottom: 0;
+        }
+        @media (min-width: 768px){
+          margin-bottom: 20px;
+          li{
+            width: 42%;
+            margin-right: 36px;
+            margin-bottom: 44px;
+            p{
+              font-size: 2rem;
+            }
+          }
         }
       }
     }
