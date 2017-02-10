@@ -7,7 +7,7 @@ header { background-image: url(../images/header_bg.jpg); background-size: cover;
 
 header .logo_nav .left { float: left; position: absolute; top: 10px; left: 10px; width: 28%; height: auto; display: block; }
 
-header .logo_nav #open { float: right; position: fixed; top: 10px; left: 83%; width: 15%; }
+header .logo_nav #open { float: right; position: fixed; top: 10px; left: 83%; width: 15%; z-index: 200; }
 
 header h1 { position: absolute; bottom: -1px; right: 0; left: 0; width: 92%; margin: auto; }
 
