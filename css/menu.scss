@@ -70,10 +70,12 @@ main{
         font-family: 'Montserrat', sans-serif;
         font-weight: 200;
         img{
-          width: 1.8rem;
+          width: 2rem;
+          vertical-align: -10%;
         }
-        .orange{
+        .banana{
           width: 1.6rem;
+          vertical-align: -20%;
         }
       }
       ul{
@@ -113,7 +115,7 @@ main{
 // main
 
 .next_btn{
-  padding: 18px 10px 10px 10px;
+  padding: 18px 10px 0px 10px;
   text-align: right;
   a{
     text-decoration: none;

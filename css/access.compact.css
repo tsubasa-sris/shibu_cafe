@@ -21,7 +21,7 @@ main #access ul li { color: #2b2b2b; font-size: 1.5rem; padding-bottom: 18px; le
 
 main #access ul li .fa { margin-right: 10px; }
 
-.next_btn { padding: 18px 10px 10px 10px; text-align: right; }
+.next_btn { padding: 18px 10px 0px 10px; text-align: right; }
 
 .next_btn a { text-decoration: none; color: black; }
 

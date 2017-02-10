@@ -33,7 +33,7 @@ main #contact form table td textarea { width: 90%; box-sizing: border-box; borde
 
 main #contact form table td input[type="submit"] { width: 30%; height: 2.2em; line-height: 2.2rem; background-color: white; border: solid 1px #808080; margin-left: 60%; }
 
-.next_btn { padding: 18px 10px 10px 10px; text-align: right; }
+.next_btn { padding: 18px 10px 0px 10px; text-align: right; }
 
 .next_btn a { text-decoration: none; color: black; }
 

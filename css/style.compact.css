@@ -31,7 +31,7 @@ main #about .about_photo ul li img { display: block; }
 
 main #about .about_photo ul li:last-child { margin-right: 0; }
 
-.next_btn { padding: 18px 10px 10px 10px; text-align: right; }
+.next_btn { padding: 18px 10px 5px 10px; text-align: right; }
 
 .next_btn a { text-decoration: none; color: black; }
 
