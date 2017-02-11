@@ -4,6 +4,8 @@ header h1 { font-family: 'Montserrat', sans-serif; position: absolute; bottom: -
 
 @media (min-width: 768px) { header h1 { font-size: 12rem; bottom: -32px; } }
 
+@media (min-width: 1024px) { header h1 { font-size: 14rem; font-weight: 300; bottom: -36px; } }
+
 main { padding: 10px; transition-property: all; transition-duration: .8s; padding: 18px; background-color: #fafafa; }
 
 main #access ul { width: 70%; margin: 15px auto; }
@@ -23,3 +25,7 @@ main #access ul li .fa { margin-right: 10px; }
   main #access ul { width: 60%; }
   main #access ul li { font-size: 2.4rem; letter-spacing: 3px; }
   main #access .map #map1 { height: 800px; } }
+
+@media (min-width: 1024px) { main #access ul { margin-bottom: 10px; }
+  main #access ul li { font-size: 2rem; margin-bottom: 20px; }
+  main #access ul li br.pc { display: none; } }

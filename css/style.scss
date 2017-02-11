@@ -1,8 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400');
 
 html{
   font-size: 62.5%;
   background-color: white;
+  @media (min-width: 1024px){
+    width: 70%;
+    margin: 0 auto;
+    background-color: rgb(135, 98, 55);
+    background-image: url(../images/coffee_bean.svg);
+    background-size: 80px;
+  }
 }
 img {
   width: 100%;
@@ -35,6 +42,32 @@ header{
       left: 83%;
       width: 15%;
       z-index: 200;
+      @media (min-width: 1024px){
+        display: none;
+      }
+    }
+    .gloval_nav{
+      display: none;
+      @media (min-width: 1024px){
+        display: block;;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        ul{
+          li{
+            float: left;
+            margin-right: 26px;
+            a{
+              text-decoration: none;
+              color: white;
+              font-family: 'Montserrat', sans-serif;
+              font-size: 2.6rem;
+              letter-spacing: 2px;
+              font-weight: 300;
+            }
+          }
+        }
+      }
     }
   }
   h1{
@@ -49,7 +82,20 @@ header{
       margin: auto;
     }
   }
+  @media (min-width: 1024px){
+    height: 70vh;
+    background-image: url(../images/header_bg_pc.jpg);
+    .logo_nav{
+      .left{
+        width: 20%;
+      }
+    }
+    h1{
+      width: 70%;
+    }
+  }
 }
+
 // haeder
 main{
   background-color: #fafafa;
@@ -98,6 +144,14 @@ main{
       }
     }
   }
+  @media (min-width: 1024px){
+    padding: 40px;
+    #about{
+      p{
+        font-size: 1.8rem;
+      }
+    }
+  }
 }
 // main
 
@@ -129,6 +183,9 @@ main{
         vertical-align: -34%;
       }
     }
+  }
+  @media (min-width: 1024px){
+    padding-bottom: 5px;
   }
 }
 
@@ -218,8 +275,37 @@ footer{
             a{
               font-size: 3.4rem;
               .fa-facebook{
-                width: 4rem;
+                width: 3.4rem;
               }
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1024px){
+      .left_box{
+        margin-left: 15px;
+        img{
+          width: 36%;
+        }
+        small{
+          font-size: 1.4rem;
+          letter-spacing: 1.4px;
+        }
+      }
+      .right_box{
+        margin-right: 14px;
+        ul{
+          margin-top: 30px;
+          li{
+            a{
+              font-size: 3rem;
+              .fa-facebook{
+                width: 2.7rem;
+              }
+            }
+            a:hover{
+              background-color: rgba(255, 255, 255, 0.5);
             }
           }
         }
@@ -287,6 +373,9 @@ footer{
     }
   }
   // タブレット用
+  @media (min-width: 1024px){
+    display: none;
+  }
 }
 #drawer.show_menu{
   display: block;

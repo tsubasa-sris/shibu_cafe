@@ -4,6 +4,8 @@ header h1 { font-family: 'Montserrat', sans-serif; position: absolute; bottom: -
 
 @media (min-width: 768px) { header h1 { font-size: 12rem; bottom: -32px; } }
 
+@media (min-width: 1024px) { header h1 { font-size: 14rem; font-weight: 300; bottom: -36px; text-shadow: 0px 0px 20px #000; } }
+
 main { padding: 10px; transition-property: all; transition-duration: .8s; padding: 18px; background-color: #fafafa; }
 
 main #menu .menu_list { color: #2b2b2b; padding: 6px; }
@@ -18,7 +20,10 @@ main #menu .menu_list ul { margin-left: 24px; }
 
 main #menu .menu_list ul li { font-size: 1.3rem; margin-bottom: 18px; }
 
-@media (max-width: 320px) { main #menu .menu_list ul li span { display: none; } }
+main #menu .menu_list ul li span.pc { display: none; }
+
+@media (max-width: 320px) { main #menu .menu_list ul li span { display: none; }
+  main #menu .menu_list ul li span.pc { display: none; } }
 
 @media (min-width: 768px) { main #menu .menu_list { padding: 26px; }
   main #menu .menu_list h2 { font-size: 3rem; }
@@ -26,6 +31,13 @@ main #menu .menu_list ul li { font-size: 1.3rem; margin-bottom: 18px; }
   main #menu .menu_list h2 .banana { width: 3rem; }
   main #menu .menu_list ul { margin-top: 10px; margin-left: 34px; }
   main #menu .menu_list ul li { font-size: 2.3rem; margin-bottom: 28px; } }
+
+@media (min-width: 1024px) { main #menu .menu_list { padding-left: 60px; }
+  main #menu .menu_list h2 { font-size: 2.8rem; }
+  main #menu .menu_list h2 img { width: 3.2rem; }
+  main #menu .menu_list h2 .banana { width: 2.6rem; }
+  main #menu .menu_list ul li { font-size: 2rem; }
+  main #menu .menu_list ul li span.pc { display: inline-block; } }
 
 main #menu .menu_photo ul { text-align: center; margin-top: 12px; }
 

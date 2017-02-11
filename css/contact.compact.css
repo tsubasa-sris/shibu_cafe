@@ -6,6 +6,8 @@ header h1 { font-family: 'Montserrat', sans-serif; position: absolute; bottom: -
 
 @media (min-width: 768px) { header h1 { font-size: 12rem; bottom: -32px; } }
 
+@media (min-width: 1024px) { header h1 { font-size: 14rem; font-weight: 300; bottom: -36px; } }
+
 main { padding: 10px; transition-property: all; transition-duration: .8s; padding: 18px; background-color: #fafafa; }
 
 main #contact p { text-align: center; font-size: 1.2rem; line-height: 1.7; }
@@ -26,6 +28,8 @@ main #contact form table td textarea { width: 90%; box-sizing: border-box; borde
 
 main #contact form table td input[type="submit"] { width: 30%; height: 2.2em; line-height: 2.2rem; background-color: white; border: solid 1px #808080; margin-left: 60%; }
 
+main #contact form table td input[type="submit"]:hover { background-color: rgba(56, 56, 56, 0.5); cursor: pointer; }
+
 @media (min-width: 768px) { main #contact { padding: 20px; }
   main #contact p { font-size: 2.2rem; }
   main #contact form { margin-top: 32px; }
@@ -35,3 +39,5 @@ main #contact form table td input[type="submit"] { width: 30%; height: 2.2em; li
   main #contact form table td input[type="text"] { height: 3rem; }
   main #contact form table td textarea { height: 20rem; }
   main #contact form table td input[type="submit"] { height: 4rem; font-size: 1.6rem; } }
+
+@media (min-width: 1024px) { main #contact p { font-size: 1.8rem; } }
