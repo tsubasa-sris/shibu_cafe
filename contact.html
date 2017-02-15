@@ -10,6 +10,9 @@
         <link rel="stylesheet" href="./css/contact.compact.css">
     </head>
     <body>
+        <div id="open">
+            <img src="./images/menu_btn.svg" alt="">
+        </div>
         <nav id="drawer">
             <div class="logo">
                 <a href="index.html"><img src="./images/shibucafe_logo1.svg" alt=""></a>
@@ -31,9 +34,6 @@
             <div class="logo_nav">
                 <div class="left">
                     <a href="index.html"><img src="./images/shibucafe_logo1.svg" alt=""></a>
-                </div>
-                <div id="open">
-                    <img src="./images/menu_btn.svg" alt="">
                 </div>
                 <div class="gloval_nav">
                     <ul>
@@ -100,8 +100,8 @@
             $('#open').click(function(){
                 $('#drawer, header, main, footer').toggleClass('show_menu');
             });
-            $('#close_btn').click(function(){
-                $('#drawer, header, main, footer').toggleClass('show_menu');
+            $('#close_btn, header, main, footer').click(function(){
+                $('#drawer, header, main, footer').removeClass('show_menu');
             });
             // フォーム入力
             $('form').submit(function(){
