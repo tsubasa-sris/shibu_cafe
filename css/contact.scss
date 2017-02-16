@@ -29,11 +29,17 @@ header{
 }
 // haeder
 main{
-  padding: 10px;
   transition-property: all;
   transition-duration: .8s;
   padding: 18px;
+  padding-bottom: 8px;
   background-color: #fafafa;
+  @media (min-width: 1024px){
+    .next_btn{
+      padding-top: 14px;
+      padding-bottom: 24px;
+    }
+  }
   #contact{
     p{
       text-align: center;

@@ -6,7 +6,9 @@ header h1 { font-family: 'Montserrat', sans-serif; position: absolute; bottom: -
 
 @media (min-width: 1024px) { header h1 { font-size: 14rem; font-weight: 300; bottom: -36px; text-shadow: 0px 0px 20px #000; } }
 
-main { padding: 10px; transition-property: all; transition-duration: .8s; padding: 18px; background-color: #fafafa; }
+main { transition-property: all; transition-duration: .8s; padding: 18px; padding-bottom: 10px; background-color: #fafafa; }
+
+@media (min-width: 1024px) { main { padding-bottom: 24px; } }
 
 main #menu .menu_list { color: #2b2b2b; padding: 6px; }
 

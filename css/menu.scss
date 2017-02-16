@@ -26,10 +26,13 @@ header{
 }
 // haeder
 main{
-  padding: 10px;
   transition-property: all;
   transition-duration: .8s;
   padding: 18px;
+  padding-bottom: 10px;
+  @media (min-width: 1024px){
+    padding-bottom: 24px;
+  }
   background-color: #fafafa;
   #menu{
     .menu_list{

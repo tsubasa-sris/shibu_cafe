@@ -26,10 +26,10 @@ header{
 }
 // haeder
 main{
-  padding: 10px;
   transition-property: all;
   transition-duration: .8s;
   padding: 18px;
+  padding-bottom: 8px;
   background-color: #fafafa;
   #access{
     ul{
@@ -79,6 +79,7 @@ main{
     }
   }
   @media (min-width: 1024px){
+    padding-bottom: 18px;
     #access{
       ul{
         margin-bottom: 10px;

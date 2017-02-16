@@ -8,7 +8,9 @@ header h1 { font-family: 'Montserrat', sans-serif; position: absolute; bottom: -
 
 @media (min-width: 1024px) { header h1 { font-size: 14rem; font-weight: 300; bottom: -36px; } }
 
-main { padding: 10px; transition-property: all; transition-duration: .8s; padding: 18px; background-color: #fafafa; }
+main { transition-property: all; transition-duration: .8s; padding: 18px; padding-bottom: 8px; background-color: #fafafa; }
+
+@media (min-width: 1024px) { main .next_btn { padding-top: 14px; padding-bottom: 24px; } }
 
 main #contact p { text-align: center; font-size: 1.2rem; line-height: 1.7; }
 
